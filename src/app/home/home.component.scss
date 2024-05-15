@@ -1,0 +1,31 @@
+.quadrato {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 4px;
+  text-align: center;
+  align-content: center;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.item {
+  align-items: center;
+  border-bottom: 2px solid #eeeeee;
+  height: 20vh;
+}
+
+.title {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a {
+  color: red;
+}
+
+.username {
+  font-size: 0.75rem;
+}

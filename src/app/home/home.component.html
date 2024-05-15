@@ -1,0 +1,29 @@
+
+<div class="input-group mb-3 mt-5" [formGroup]="form">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+  </div>
+  <input type="number" class="form-control" placeholder="idPost" aria-label="idPost" aria-describedby="basic-addon1" formControlName="inputSearch">
+  <button type="button" class="btn btn-primary" (click)="clear()">CLEAR</button>
+</div>
+<app-card-detail *ngIf="this.httpService.isOpenCard" [post]="postSelected"></app-card-detail>
+<div class="container">
+  <div class="row">
+    <ul class="list-group col-12 col-lg-6" *ngFor="let post of posts">
+      <li class="row item">
+        <div class="col-2 col-sm-auto">
+          <div class="quadrato" (click)="itemSelected(post)">{{ post.userId | genericInputPipe: getIniziali }}</div>
+        </div>
+        <div class="col-10">
+          <div>
+            <h1 class="title">{{post.title}}</h1>
+          </div>
+          <div class="d-flex">
+            <p class="username">pubblicato da : <a routerLink="/user/{{post.userId}}">{{ post.userId | genericInputPipe:
+                getUsername }}</a></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

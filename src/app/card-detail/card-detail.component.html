@@ -1,0 +1,13 @@
+<div class="container mt-5 d-flex">
+  <div class="card card-detail">
+    <div class="card-body">
+      <div class="d-flex">
+        <p>pubblicato da : {{this.httpService.authorPostSelected?.name}} alias </p>
+        <p class="shared-color ms-1">{{this.httpService.authorPostSelected?.username}}</p>
+      </div>
+      <h1 class="card-title shared-color"> {{post?.title}} </h1>
+      <h6 class="card-subtitle mb-2 text-muted"> {{post?.body}} </h6>
+      <button type="button" class="btn button-card" (click)="closeCard()">Chiudi</button>
+    </div>
+  </div>
+</div>

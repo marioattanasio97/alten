@@ -1,0 +1,15 @@
+<div class="container contenitore d-flex justify-content-center align-items-center">
+  <div class="card">
+    <div class="card-body">
+      <div class="">
+        <p> Name:  {{user?.name}} </p>
+        <p> Address: {{ user?.address?.street}} </p>
+        <p> Company: {{user?.company?.name}} </p>
+        <p> Phone: {{user?.phone}} </p>
+        <p> Username: {{user?.username}} </p>
+        <p> E-mail: {{user?.email}} </p>
+        <button type="button" class="btn btn-primary" routerLink="/home">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
